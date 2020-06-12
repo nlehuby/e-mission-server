@@ -115,6 +115,7 @@ class TestPipelineRealData(unittest.TestCase):
                     self.assertEqual(rs.features[0].properties.end_fmt_time, es.features[0].properties.end_fmt_time)
                     self.assertEqual(rs.features[0].properties.sensed_mode, es.features[0].properties.sensed_mode)
                     self.assertEqual(len(rs.features[0].properties.speeds), len(es.features[0].properties.speeds))
+                    self.assertEqual(len(rs.features[0].properties.timestamps), len(es.features[0].properties.timestamps))
                     self.assertEqual(len(rs.features[0].geometry.coordinates), len(es.features[0].geometry.coordinates))
                 logging.debug(20 * "-")
             logging.debug(20 * "=")
